@@ -101,7 +101,7 @@ const Starter = () => {
                     />
                 </div>
                 <ul>
-                {txn_output.map(({ title, dependency, href }, index) => (
+                {txn_output.map(({ title, dependency, href }) => (
                     <li
                     key={title}
                     className="flex justify-between"
