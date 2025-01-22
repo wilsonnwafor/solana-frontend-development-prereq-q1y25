@@ -54,7 +54,7 @@ const Finished = () => {
     const getInfo = async () => {
       if (connection && publicKey) {
         const info = await connection.getAccountInfo(publicKey);
-        setBalance(info?.lamports! / web3.LAMPORTS_PER_SOL);
+        setBalance(info!.lamports / web3.LAMPORTS_PER_SOL);
       }
     };
     getInfo();
